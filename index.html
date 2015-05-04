@@ -68,10 +68,10 @@ that are listed in <code>composer.json</code></p>
 <h3>
 <a id="create-the-roles" class="anchor" href="#create-the-roles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create the Roles</h3>
 
-<div class="highlight highlight-sql"><pre><span class="pl-k">INSERT INTO</span> <span class="pl-s"><span class="pl-pds">`</span>user_role<span class="pl-pds">`</span></span> (<span class="pl-s"><span class="pl-pds">`</span>id<span class="pl-pds">`</span></span>, <span class="pl-s"><span class="pl-pds">`</span>role_id<span class="pl-pds">`</span></span>, <span class="pl-s"><span class="pl-pds">`</span>is_default<span class="pl-pds">`</span></span>, <span class="pl-s"><span class="pl-pds">`</span>parent_id<span class="pl-pds">`</span></span>) <span class="pl-k">VALUES</span>
-    (<span class="pl-c1">1</span>, <span class="pl-s"><span class="pl-pds">'</span>guest<span class="pl-pds">'</span></span>, <span class="pl-k">NULL</span>, <span class="pl-k">NULL</span>),
-    (<span class="pl-c1">2</span>, <span class="pl-s"><span class="pl-pds">'</span>user<span class="pl-pds">'</span></span>, <span class="pl-k">NULL</span>, <span class="pl-k">NULL</span>),
-    (<span class="pl-c1">3</span>, <span class="pl-s"><span class="pl-pds">'</span>admin<span class="pl-pds">'</span></span>, <span class="pl-k">NULL</span>, <span class="pl-k">NULL</span>);</pre></div>
+<div class="highlight highlight-sql"><pre><span class="pl-k">INSERT INTO</span> user_role (role_id, is_default, parent_id) <span class="pl-k">VALUES</span>
+    (<span class="pl-s"><span class="pl-pds">'</span>guest<span class="pl-pds">'</span></span>, <span class="pl-k">NULL</span>, <span class="pl-k">NULL</span>),
+    (<span class="pl-s"><span class="pl-pds">'</span>user<span class="pl-pds">'</span></span>, <span class="pl-k">NULL</span>, <span class="pl-k">NULL</span>),
+    (<span class="pl-s"><span class="pl-pds">'</span>admin<span class="pl-pds">'</span></span>, <span class="pl-k">NULL</span>, <span class="pl-k">NULL</span>);</pre></div>
 
 <h2>
 <a id="example-application" class="anchor" href="#example-application" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example Application</h2>
@@ -100,13 +100,6 @@ that are listed in <code>composer.json</code></p>
 <li>CharacterPanel (to show current status of a character)</li>
 <li>AdminPanel with UserPanel, DonateStatistic, view Logs, edit different parts in page</li>
 <li>easy to change the web, admin and email layout</li>
-</ul>
-
-<h2>
-<a id="online-example" class="anchor" href="#online-example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Online Example</h2>
-
-<ul>
-<li><a href="http://blazecf.to/">BlazeCF</a></li>
 </ul>
 
 <h2>
